@@ -1,0 +1,7 @@
+SERVER = localhost 7777
+
+client:
+	cd client2; ./client $(SERVER)
+
+server:
+	fuser -k 7777/tcp; ./server
